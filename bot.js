@@ -11,6 +11,18 @@ client.on('message', message => {
       }
 });
 
+client.on('message', msg => {
+
+    if (msg.content == '+ادخل') {
+        if (msg.member.voiceChannel) {
+
+     if (msg.member.voiceChannel.joinable) {
+         msg.member.voiceChannel.join();
+     }
+    }
+}
+})
+
 client.on('message', message => {
       if(message.content == '!قران 1'){
         message.react('🔊')}  return;
