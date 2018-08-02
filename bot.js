@@ -11,13 +11,13 @@ client.on('message', message => {
       }
 });
 
-clien.on('message', message => {
+client.on('message', message => {
       if(message.content == '!قران 1'){
         message.react('🔊')}  return;
   const ytdl = require('ytdl-core');
     const stram0ptions = { seek: 0, volume: 100};  
     const broadcast = 
-clien.createVoiceBroadcast();
+client.createVoiceBroadcast();
 
 
 
@@ -30,13 +30,13 @@ message.gulid.member(message.author).voiceChannel.join()
 .catch(console.error);
 });
 
-clien.on('messge', message => {
+client.on('messge', message => {
        if(message.content == '!قران 2'){
            message.react('🔊')} return;
     const ytdl = require('ytdl-core');
       const stram0ptions = { seek: 0, volume:100};
       const broadcast = 
-clien.createVoiceBroadcast();
+client.createVoiceBroadcast();
 
 
 
